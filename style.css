@@ -1,0 +1,228 @@
+body {
+  background-color: antiquewhite;
+  font-family: "Cormorant", serif, cursive;
+  color: #8b1a10;
+  font-weight: 500;
+}
+
+main {
+  width: 1000px;
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.tex {
+  /* font-family: "Cormorant", serif, cursive; */
+  font-family: "Pacifico", cursive;
+  /* color: #531607; */
+  color: #8b1a10;
+  font-weight: 500;
+  text-align: center;
+  font-size: 21px;
+  letter-spacing: 2px;
+  margin: 8px;
+}
+
+.info {
+  width: 400px;
+  height: 30px;
+  /* border: 2px solid black; */
+  float: left;
+  margin: 10px;
+  display: none;
+}
+
+header {
+  width: 1000px;
+  /* border: 2px solid blue; */
+  margin: 0 auto;
+}
+
+.navi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+.btn {
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 30px;
+}
+
+#imgLan:active {
+  border-radius: 60%;
+  background-color: white;
+  transition: 0.15s;
+}
+#imgLan {
+  width: 70px;
+}
+
+.buttons {
+  float: left;
+  width: 360px;
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 90px;
+  background-color: antiquewhite;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.button:hover {
+  background-color: white;
+  border-color: chartreuse;
+}
+
+.s {
+  background-image: url("images/stone_s.png");
+}
+.c {
+  background-image: url("images/clipper_s.png");
+}
+.p {
+  background-image: url("images/paper_s.png");
+}
+
+.hands {
+  margin: 900 auto;
+  width: 1000px;
+  height: 460px;
+  /* border: 3px solid red; */
+  float: left;
+  position: relative;
+  transition: all 200ms linear;
+  user-select: none;
+  will-change: transform;
+}
+
+.hand_div {
+  width: 350px;
+  height: 450px;
+  background-image: url("images/stone.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border: 3px solid red; */
+  justify-content: center;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  transition: all 200ms linear;
+  will-change: transform;
+}
+
+.result_div {
+  width: 200px;
+  height: 430px;
+  border: 3px solid black;
+  border-radius: 10px;
+  justify-content: center;
+  position: absolute;
+  left: 400px;
+  top: 10px;
+  text-align: center;
+  color: red;
+  font-weight: 800;
+}
+
+.restart {
+  width: 200px;
+  height: 30px;
+  /* border: 3px solid red; */
+}
+
+#restart {
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 3px 40px;
+  margin-top: 10px;
+}
+
+.result_text {
+  font-size: 25px;
+  text-align: center;
+  color: red;
+  font-weight: 800;
+  /* border: 3px solid black; */
+  width: 195px;
+  height: 60px;
+  position: absolute;
+  bottom: 300px;
+}
+.smile {
+  width: 190px;
+  height: 160px;
+  /* border: 1px solid black; */
+  position: absolute;
+  left: 5px;
+  bottom: 140px;
+  background-image: none;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.count {
+  width: 190px;
+  height: 40px;
+  border: 2px solid black;
+  position: absolute;
+  left: 3px;
+  bottom: 80px;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+.count_player {
+  width: 60px;
+  height: 60px;
+  border: 2px solid black;
+  position: absolute;
+  left: 5px;
+  bottom: 10px;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+.count_opponent {
+  width: 60px;
+  height: 60px;
+  border: 2px solid black;
+  position: absolute;
+  left: 132px;
+  bottom: 10px;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+.hand_divM {
+  width: 350px;
+  height: 450px;
+  background-image: url("images/stoneM.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border: 3px solid red; */
+  justify-content: center;
+  position: absolute;
+  left: 645px;
+  top: 10px;
+  transition: all 200ms linear;
+  will-change: transform;
+}
+
+.show {
+  visibility: hidden;
+}

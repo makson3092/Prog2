@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Камень/ножницы/бумага</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;1,500&family=Pacifico&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="navi">
+                <button value="en" class="btn" id="lang-en"><img id="imgLan" src="images/brit.png"></button>
+                <button value="uk" class="btn" href="#" id="lang-uk"><img id="imgLan" src="images/uk.png"></button>
+                <button value="pl" class="btn" id="lang-pl"><img id="imgLan" src="images/pol.png"></button>
+            </div>
+            <p class="lng-text1 tex">Виберіть камінь, ножиці або папір. Суперник зробить це сам</p>
+            <p class="lng-text2 tex">Камінь ламає ножиці та перемагає, але його можна обернути папером</p>
+            <p class="lng-text3 tex">Ножиці ріжуть папір і перемагають, але вони ламаються об камінь</p>
+            <p class="lng-text4 tex">Папір обертає камінь і виграє, але його ріжуть ножиці</p>
+            <script src="language.js"></script>
+            </div>
+        </header>
+
+        <section>
+            <!-- here the Game -->
+            <div id='player_div' class='info'></div>
+            <div id='result_div' class='info'></div>
+            <div id='opponent_div' class='info'></div>
+            <div class="hands">
+                <div class="hand_div"></div>
+                <div class="result_div">
+                    <div class="restart"><button class="lng-restart" type="button" id='restart'
+                            onClick="window.location.reload();">ПЕРЕЗАПУСК</button></div>
+                    <div class="result_text">
+                    </div>
+                    <div class='smile'></div>
+                    <div class='count lng-text5'>рахунок</div>
+                    <div class='count_player'>0</div>
+                    <div class='count_opponent'>0</div>
+                </div>
+                <div class="hand_divM " id='m'></div>
+            </div>
+            <div id='buttons' class='buttons'>
+                <button id='stone' class='button s'></button>
+                <button id='clipper' class='button c'></button>
+                <button id='paper' class='button p'></button>
+            </div>
+        </section>
+        <script src="language.js"></script>
+        <script src="scripts.js">
+        </script>
+    </main>
+</body>
+
+</html>
